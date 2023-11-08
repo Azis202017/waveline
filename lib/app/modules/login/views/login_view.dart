@@ -19,6 +19,7 @@ class LoginView extends GetView<LoginController> {
           style: TextStyle(fontSize: 20),
         ),
       ),
+      
     );
   }
 }
