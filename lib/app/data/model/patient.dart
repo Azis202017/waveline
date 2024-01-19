@@ -7,9 +7,9 @@ String patientToJson(Patient data) => json.encode(data.toJson());
 
 class Patient {
     int? id;
-    int? userId;
-    int? doctorId;
-    int? deviceId;
+    String? userId;
+    String? doctorId;
+    String? deviceId;
     dynamic profilePicture;
     String? status;
     DateTime? createdAt;
