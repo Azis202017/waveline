@@ -3,18 +3,27 @@ version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
 environment:
-  sdk: '>=3.1.1 <4.0.0'
+  sdk: ">=3.1.1 <4.0.0"
 
 dependencies:
   cupertino_icons: ^1.0.2
+  debounce_throttle: ^2.0.0
+  device_info_plus: ^9.1.0
+  fl_chart: ^0.64.0
   flutter:
     sdk: flutter
+  flutter_animate: ^4.2.0+1
+  flutter_bluetooth_serial: ^0.4.0
+  flutter_floating_bottom_bar: ^1.2.0
   get: 4.6.6
+  get_storage: ^2.1.1
   google_fonts: ^6.1.0
-<<<<<<< HEAD
-=======
   http: ^1.1.0
->>>>>>> origin/master
+  intl: ^0.18.1
+  introduction_screen: ^3.1.12
+  lottie: ^2.7.0
+  permission_handler: ^11.0.1
+  syncfusion_flutter_charts: ^23.1.44
 
 dev_dependencies:
   flutter_lints: 3.0.1
@@ -23,8 +32,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-<<<<<<< HEAD
   assets:
     - assets/img/
-=======
->>>>>>> origin/master
+    - assets/json/
+    - assets/predict/
