@@ -22,29 +22,26 @@ class BottomNavView extends GetView<BottomNavController> {
         body: Stack(
           children: [
             controller.page.elementAt(controller.selectedIndex),
-            Container(
-              margin: const EdgeInsets.only(
-                top: 20,
-              ),
-              padding: const EdgeInsets.only(
-                left: 16,
-                right: 16,
-                bottom: 32,
-              ),
-              child: Align(
-                alignment: const Alignment(0.0, 1.0),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                padding: const EdgeInsets.only(
+                  left: 16,
+                  right: 16,
+                  bottom: 32,
+                ),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(29),
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.grey.withOpacity(
-                              0.5), // You can customize the shadow color
+                          color: Color.fromRGBO(0, 17, 51, 0.35),
                           spreadRadius: 5,
-                          blurRadius: 7,
-                          offset: const Offset(
-                              0, 3), // changes the position of the shadow
+                          blurRadius: 200,
+                          offset: Offset(0, 3),
                         ),
                       ],
                     ),
