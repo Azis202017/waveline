@@ -78,6 +78,7 @@ class BluetoothScanView extends GetView<BluetoothScanController> {
                               const SizedBox(height: 8),
                               ListView.builder(
                                 shrinkWrap: true,
+                                primary: false,
                                 itemCount: controller.devices.length,
                                 itemBuilder: (context, index) {
                                   final device = controller.devices[index];
