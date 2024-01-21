@@ -1,23 +1,23 @@
 import 'package:get/get.dart';
 
-class FeedbackController extends GetxController {
-  //TODO: Implement FeedbackController
+import '../../../data/model/feedback.dart';
+import '../../../data/services/feedback_service.dart';
 
-  final count = 0.obs;
+class FeedbackController extends GetxController {
+  bool isLoading = true;
+  List<FeedbackModel> listOfFeedback = [];
   @override
   void onInit() {
     super.onInit();
+    getListFeedback();
+  }
+  Future<void> getListFeedback() async {
+    listOfFeedback = await FeedbackService().getListFeedback();
+    print(listOfFeedback);
+    isLoading = false;
+    update();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
 
-  void increment() => count.value++;
 }
