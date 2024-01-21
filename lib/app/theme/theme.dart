@@ -4,7 +4,7 @@ import 'package:waveline/app/theme/color.dart';
 import 'font.dart';
 
 ThemeData theme = ThemeData(
-  scaffoldBackgroundColor: whiteColor,
+  scaffoldBackgroundColor: Color(0xffF8FAFF),
   appBarTheme:  AppBarTheme(
     backgroundColor: whiteColor,
     elevation: 0,
@@ -19,7 +19,7 @@ ThemeData theme = ThemeData(
     error: errorColor,
   ),
   inputDecorationTheme: InputDecorationTheme(
-    hintStyle: placeholder.copyWith(
+    hintStyle: body2Regular.copyWith(
       color: greyColor,
     ),
     border: InputBorder.none,
