@@ -3,7 +3,12 @@ import 'package:waveline/app/theme/font.dart';
 
 class DoctorProfileWidget extends StatelessWidget {
   final String name;
-  const DoctorProfileWidget({super.key, required this.name});
+  final void Function()? onPressed;
+  const DoctorProfileWidget({
+    super.key,
+    required this.name,
+    this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +48,7 @@ class DoctorProfileWidget extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: onPressed,
                     child: const Text('Record'),
                   ),
                 )
