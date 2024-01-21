@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import 'package:get/get.dart';
 import 'package:waveline/app/theme/color.dart';
@@ -32,7 +33,7 @@ class LoginView extends GetView<LoginController> {
                           width: 77,
                           height: 35,
                         ),
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 30,
                       ),
@@ -42,7 +43,7 @@ class LoginView extends GetView<LoginController> {
                           textAlign: TextAlign.center,
                           style: h3Bold,
                         ),
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 8,
                       ),
@@ -53,7 +54,7 @@ class LoginView extends GetView<LoginController> {
                             color: fontAbu,
                           ),
                         ),
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 42,
                       ),
@@ -61,7 +62,7 @@ class LoginView extends GetView<LoginController> {
                         'Email',
                         textAlign: TextAlign.center,
                         style: bodyRegular,
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 8,
                       ),
@@ -87,7 +88,7 @@ class LoginView extends GetView<LoginController> {
                           ),
                           hintText: 'example@gmail.com',
                         ),
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 16,
                       ),
@@ -95,7 +96,7 @@ class LoginView extends GetView<LoginController> {
                         'Password',
                         textAlign: TextAlign.center,
                         style: bodyRegular,
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 8,
                       ),
@@ -140,7 +141,7 @@ class LoginView extends GetView<LoginController> {
                             ),
                           ),
                         ),
-                      ),
+                      ).animate().slideY(),
                       const SizedBox(
                         height: 60,
                       ),
@@ -151,7 +152,7 @@ class LoginView extends GetView<LoginController> {
                           onPressed: controller.login,
                           child: const Text('Login'),
                         ),
-                      )
+                      ).animate().slideY()
                     ],
                   ),
                 ),
